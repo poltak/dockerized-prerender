@@ -1,0 +1,17 @@
+{
+  "name": "@poltak/prerender",
+  "version": "0.0.1",
+  "description": "Dockerized prerender server",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poltak/dockerized-prerender"
+  },
+  "scripts": {
+    "start": "node index"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "prerender": "^4.4.1"
+  }
+}
