@@ -2,7 +2,10 @@ require('dotenv').config()
 const os = require('os')
 const prerender = require('prerender')
 
-const server = prerender({ workers: process.env.NUM_WORKERS || os.cpus().length })
+const server = prerender({
+  workers: process.env.NUM_WORKERS || os.cpus().length,
+  port: process.env.PORT || 80,
+})
 
 server.use(prerender.sendPrerenderHeader())
 server.use(prerender.removeScriptTags())
